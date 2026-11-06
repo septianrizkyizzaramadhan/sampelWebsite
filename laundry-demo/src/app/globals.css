@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+@theme {
+  /* Sage Green */
+  --color-brand-50: #f4f7f2;
+  --color-brand-100: #e4ebd9;
+  --color-brand-500: #5c8049;
+  --color-brand-600: #446336; /* Aksen tombol */
+  --color-brand-700: #365029;
+
+  /* Warm Sand/Beige (mirip Tisoo) */
+  --color-sand-50: #fdfcf9;
+  --color-sand-100: #f4f0e6;
+  --color-sand-200: #e8dfcf;
+  --color-sand-300: #d6c8b3;
+
+  --font-serif: var(--font-lora), Georgia, serif;
+  --font-sans: var(--font-geist-sans), ui-sans-serif, sans-serif;
+}
+
+html { scroll-behavior: smooth; scroll-padding-top: 80px; }
+body { @apply bg-sand-50 text-slate-900 font-sans; }
+h1, h2, h3, .font-serif { font-family: var(--font-serif); letter-spacing: -0.02em; }
+.eyebrow { @apply text-[10px] sm:text-xs font-bold uppercase tracking-[0.2em]; }
